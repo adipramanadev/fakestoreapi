@@ -26,7 +26,59 @@ class _LandingPageState extends State<LandingPage> {
 
   Widget _buildBottomNavigationBar() {
     return BottomNavigationBar(
-     
+      type: BottomNavigationBarType.fixed,
+      onTap: (index) {
+        setState(() {
+          _bottomNavCurrentIndex = index;
+        });
+      },
+      currentIndex: _bottomNavCurrentIndex,
+      items: [
+        BottomNavigationBarItem(
+          activeIcon: Icon(
+            Icons.home,
+            color: Colors.blueAccent,
+          ),
+          label: 'Home',
+          icon: Icon(
+            Icons.home,
+            color: Colors.grey,
+          ),
+        ),
+        BottomNavigationBarItem(
+          activeIcon: Icon(
+            Icons.home,
+            color: Colors.blueAccent,
+          ),
+          label: 'Home',
+          icon: Icon(
+            Icons.home,
+            color: Colors.grey,
+          ),
+        ),
+        BottomNavigationBarItem(
+          activeIcon: Icon(
+            Icons.home,
+            color: Colors.blueAccent,
+          ),
+          label: 'Home',
+          icon: Icon(
+            Icons.home,
+            color: Colors.grey,
+          ),
+        ),
+        BottomNavigationBarItem(
+          activeIcon: Icon(
+            Icons.home,
+            color: Colors.blueAccent,
+          ),
+          label: 'Home',
+          icon: Icon(
+            Icons.home,
+            color: Colors.grey,
+          ),
+        ),
+      ],
     );
   }
 }
