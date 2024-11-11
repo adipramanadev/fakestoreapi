@@ -95,7 +95,7 @@ class _UserListScreenState extends State<UserListScreen> {
                         ),
                       ],
                     ),
-                    trailing: Icon(
+                    trailing: const Icon(
                       Icons.arrow_forward_ios,
                       color: Colors.blueAccent,
                       size: 16.0,
