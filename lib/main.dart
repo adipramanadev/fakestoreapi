@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'views/userlistscreen.dart';
+import 'package:myapp/launcher/launcherpage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,8 +10,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: UserListScreen(),
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Launcherpage(),
     );
   }
 }

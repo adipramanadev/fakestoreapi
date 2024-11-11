@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/views/userlistscreen.dart';
 
 class LandingPage extends StatefulWidget {
   const LandingPage({super.key});
@@ -10,7 +11,7 @@ class LandingPage extends StatefulWidget {
 class _LandingPageState extends State<LandingPage> {
   int _bottomNavCurrentIndex = 0;
   final List<Widget> _pages = [
-    const Placeholder(),
+    UserListScreen(),
     const Placeholder(),
     const Placeholder(),
     const Placeholder(),
@@ -26,6 +27,7 @@ class _LandingPageState extends State<LandingPage> {
 
   Widget _buildBottomNavigationBar() {
     return BottomNavigationBar(
+      backgroundColor: Colors.white,
       type: BottomNavigationBarType.fixed,
       onTap: (index) {
         setState(() {
@@ -33,15 +35,15 @@ class _LandingPageState extends State<LandingPage> {
         });
       },
       currentIndex: _bottomNavCurrentIndex,
-      items: [
+      items: const [
         BottomNavigationBarItem(
           activeIcon: Icon(
-            Icons.home,
+            Icons.person,
             color: Colors.blueAccent,
           ),
-          label: 'Home',
+          label: 'Halaman User',
           icon: Icon(
-            Icons.home,
+            Icons.person,
             color: Colors.grey,
           ),
         ),
