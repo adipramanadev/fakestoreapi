@@ -11,7 +11,7 @@ class LandingPage extends StatefulWidget {
 class _LandingPageState extends State<LandingPage> {
   int _bottomNavCurrentIndex = 0;
   final List<Widget> _pages = [
-    UserListScreen(),
+    const UserListScreen(),
     const Placeholder(),
     const Placeholder(),
     const Placeholder(),
