@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/views/cartviews.dart';
 import 'package:myapp/views/userlistscreen.dart';
 
 class LandingPage extends StatefulWidget {
@@ -12,7 +13,7 @@ class _LandingPageState extends State<LandingPage> {
   int _bottomNavCurrentIndex = 0;
   final List<Widget> _pages = [
     const UserListScreen(),
-    const Placeholder(),
+    const CartViews(),
     const Placeholder(),
     const Placeholder(),
   ];
@@ -49,12 +50,12 @@ class _LandingPageState extends State<LandingPage> {
         ),
         BottomNavigationBarItem(
           activeIcon: Icon(
-            Icons.home,
+            Icons.shop,
             color: Colors.blueAccent,
           ),
-          label: 'Home',
+          label: 'Cart',
           icon: Icon(
-            Icons.home,
+            Icons.shop,
             color: Colors.grey,
           ),
         ),
